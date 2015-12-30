@@ -1,0 +1,25 @@
+default:
+    formatters:
+        pretty:
+            verbose:  true
+            paths:    false
+            snippets: false
+
+    suites:
+        web:
+            contexts:
+                - Resources\Behat\WebContext
+            filters:
+                tags: ""
+
+    extensions:
+        Behat\MinkExtension:
+            base_url: http://www.test.ci/index.php/
+            sessions:
+                default:
+                    goutte: ~
+                javascript:
+                    selenium2: ~
+            browser_name: firefox
+            show_auto:    false
+            files_path:   /home/ubuntu/devboard-notify/

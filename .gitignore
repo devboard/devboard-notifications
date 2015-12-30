@@ -1,0 +1,34 @@
+/app/bootstrap.php.cache
+/app/cache/*
+!app/cache/.gitkeep
+/app/config/parameters.yml
+/app/logs/*
+!app/logs/.gitkeep
+/app/phpunit.xml
+/bin/
+/build/
+/composer.phar
+/tmp
+/vendor/
+/web/app_dev.php
+/web/app_test.php
+/web/bundles/
+
+#PHPStorm folder
+/.idea
+#backup files from unix editors
+*~
+#merge files
+*.orig
+#Ignoring shell scripts in root folder
+/*.sh
+#Ignoring MacDS_Store files
+.DS_Store
+
+#Ignoring .vagrant folder
+/.vagrant
+
+#Ignoring symfony files
+/app/SymfonyRequirements.php
+/app/check.php
+/web/config.php

@@ -1,0 +1,30 @@
+default:
+    formatters:
+        pretty:
+            verbose:  true
+            paths:    false
+            snippets: false
+
+    suites:
+        web:
+            contexts:
+                - Resources\Behat\WebContext
+            filters:
+                tags: ""
+
+    extensions:
+        Behat\MinkExtension:
+            base_url: https://test.devboard-notify.loc/
+            sessions:
+                default:
+                    goutte: ~
+                javascript:
+                    selenium2: ~
+            browser_name: firefox
+            show_auto:    false
+            files_path: /vagrant/
+            selenium2:
+                wd_host: http://127.0.0.1:4444/wd/hub
+                capabilities:
+                    version: ''
+        #RMiller\BehatSpec\BehatExtension: ~

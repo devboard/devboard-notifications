@@ -1,7 +1,7 @@
 <?php
 namespace DevBoard\Notify;
 
-class Event
+class Event implements \JsonSerializable
 {
     private $eventType;
     private $signature;

@@ -14,7 +14,7 @@ $app->get(
     }
 );
 
-$app->get(
+$app->post(
     '/github/',
     function (Request $request) use ($app) {
 

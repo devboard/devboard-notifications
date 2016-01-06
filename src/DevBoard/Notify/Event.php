@@ -50,7 +50,7 @@ class Event implements \JsonSerializable
         return [
             'eventType' => $this->getEventType(),
             'signature' => $this->getSignature(),
-            'content'   => json_decode($this->getContent(), true),
+            'content'   => $this->getContent(),
         ];
     }
 }
